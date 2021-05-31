@@ -1,2 +1,86 @@
 /* font-family: 'Roboto', sans-serif; (regular & bold)
 font-family: 'Roboto Slab', serif; (bold only) */
+
+.roboto-slab {
+    font-family: 'Roboto Slab', serif;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.roboto-bold {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.story {
+    background-color: #fff;
+}
+
+.story-heading {
+    font-family: 'Roboto', sans-serif;
+    color: #bababa;
+}
+
+.story-content {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.img-identifier-container {
+    background-color: #d3d3d3;
+    color: #f72210;
+}
+
+.versus::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #d9d9d9;
+    width: 100%;
+    top: calc(50% - 2px)
+}
+
+.versus::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #d9d9d9;
+    width: 100%;
+    top: 50%;
+}
+
+.small-bold-heading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.bold-name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.sponsored-insight-container {
+    background-color: #fff;
+    color: #3581f4;
+}
+
+.culture-travel-container {
+    background-color: #d3d3d3;
+    color: #333;
+}
+
+.in-the-mag-issue-container {
+    color: #f00;
+}
+
+.cover {
+    background-color: #f00;
+    width: 20%;
+}
+
+.us {
+    color: #f00;
+    width: 20%;
+}
