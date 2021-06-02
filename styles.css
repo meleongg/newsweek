@@ -84,3 +84,29 @@ font-family: 'Roboto Slab', serif; (bold only) */
     color: #f00;
     width: 20%;
 }
+
+.socials > *, .last-links > *, .editions-links > * {
+    padding: 0 0.5rem;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+.sponsored-insight h5 {
+    width: 100%;
+}
+
+.sponsored-insight .small-bold-heading {
+    text-align: start;
+}
+
+.newsletter picture {
+    width: 100%;
+}
+
+/* * {
+    outline: 1px solid red;     
+} */

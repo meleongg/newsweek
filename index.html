@@ -21,31 +21,33 @@
 
 <body>
     <!-- Header -->
-    <header class='container'>
-        <nav class='row'>
-            <ul class='col-12 col-sm-12 p-2 d-flex justify-content-between align-items-center text-white'
-                style='background-color: #f72210;'>
-                <li class='col-4 col-sm-4 d-flex justify-content-start align-items-center'>
-                    <h1 class='roboto-slab m-0'>Newsweek</h1>
-                </li>
-                <li class='col-8 col-sm-8 d-flex justify-content-end align-items-center'>
-                    <i class="fas fa-user me-2" style="color: #d3d3d3;"></i>
-                    <button class='btn btn-warning text-uppercase fw-bold'
-                        style='border-radius: 24px; font-size: 11px; background-color: #ffe400; border-color: #ffe400;'>subscribe
-                        from $4
-                        ></button>
-                    <i class="fas fa-bars ms-2" style="color: #d3d3d3"></i>
-                </li>
-            </ul>
-            <div class='col-sm-3'>
-
+    <header class='container-fluid sticky-top p-0'>
+        <nav class='navbar p-0'>
+            <div class='w-100'>
+                <ul class='d-flex justify-content-between p-2 align-items-center text-white m-0'
+                    style='background-color: #f72210;'>
+                    <li class='nav-item d-flex justify-content-start align-items-center'>
+                        <h1 class='roboto-slab m-0'>Newsweek</h1>
+                    </li>
+                    <li class='nav-item d-flex justify-content-end align-items-center'>
+                        <i class="fas fa-user me-3" style="color: #d3d3d3;"></i>
+                        <button class='d-block d-sm-none btn btn-warning text-uppercase fw-bold'
+                            style='border-radius: 24px; font-size: 11px; background-color: #ffe400; border-color: #ffe400;'>subscribe
+                            from $4
+                            ></button>
+                        <button class='d-none d-sm-block btn btn-warning text-uppercase fw-bold'
+                            style='border-radius: 24px; font-size: 11px; background-color: #ffe400; border-color: #ffe400;'>subscribe
+                            ></button>
+                        <i class="fas fa-bars ms-3" style="color: #d3d3d3"></i>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
     <!-- Main Content -->
-    <div class='container'>
+    <div class='container-fluid'>
         <!-- Top Story -->
-        <section class='story px-1 d-flex flex-column'>
+        <section class='story px-1 mt-4 d-flex flex-column'>
             <h6 class='text-uppercase mt-2 fw-bold story-heading'>Top Story</h6>
             <div class='story-imgs mb-2 position-relative'>
                 <img class='img-fluid'
@@ -160,8 +162,8 @@
         <section class='the-debate px-1 d-flex flex-column mt-3'>
             <h6 class='text-uppercase fw-bold story-heading'>The Debate</h6>
             <!-- Top Argument -->
-            <div
-                class='top-argument d-flex border-top border-secondary border-5 justify-content-start align-items-center'>
+            <div class='top-argument d-flex border-top border-5 justify-content-start align-items-center'
+                style='border-color: #d3d3d3;'>
                 <picture>
                     <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
                         alt="headshot">
@@ -180,8 +182,8 @@
                 </div>
             </div>
             <!-- Bottom Argument -->
-            <div
-                class='btm-argument d-flex border-bottom border-secondary border-5 justify-content-end text-end align-items-center'>
+            <div class='btm-argument d-flex border-bottom border-5 justify-content-end text-end align-items-center'
+                style='border-color: #d3d3d3;'>
                 <div class='btm-argument-text my-4 me-3 d-flex flex-column align-items-end'>
                     <h6 class='small-bold-heading'>Unpack the Supreme Court and Expose Them</h6>
                     <h6 class='text-uppercase'>By: <span class='bold-name'>Tom Rogers</span></h6>
@@ -1144,11 +1146,11 @@
             </div>
         </section>
         <!-- Subscribe -->
-        <section class='us-cover px-1 d-flex flex-column mt-3 justify-content-center align-items-center'>
+        <section class='subscribe-end px-1 d-flex flex-column mt-3 justify-content-center align-items-center'>
             <h6 class='text-uppercase small-bold-heading align-self-start' style='color: #f00;'>Subscribe</h6>
             <div class='sub-content p-3 d-flex flex-column justify-content-center align-items-center text-center'
                 style='background-color: #d3d3d3;'>
-                <div class='block bg-dark' style='width: 70%; height: 150px;'></div>
+                <div class='block bg-dark' style='width: 70%; height: 250px;'></div>
                 <h6 class='small-bold-heading mt-2'>In-depth Stories You Don't See Elsewhere About Topics You Want to
                     Read!
                 </h6>
@@ -1157,6 +1159,67 @@
                 <button class='btn text-white roboto-bold' style='background-color: #f00;'>SUBSCRIBE ></button>
             </div>
         </section>
+        <!-- Newsletter -->
+        <section class='newsletter px-1 d-flex flex-column mt-4 justify-content-center align-items-center'>
+            <h6 class='text-uppercase small-bold-heading align-self-start' style='color: #f00;'>Newsletter</h6>
+            <picture>
+                <img class='img-fluid'
+                    src="https://d.newsweek.com/en/full/1541302/starting5-homepage.jpg?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5"
+                    alt="newsletter-photo">
+            </picture>
+            <div class='newsletter-text border border-1 w-100 text-center px-2' style='border-color: #d3d3d3'>
+                <h6 class='text-uppercase small-bold-heading mt-3'>Best of Newsweek via email</h6>
+                <p class='story-content m-0'>Daily news headlines & detailed briefings enjoyed by half a million
+                    readers.
+                </p>
+                <form class='d-flex justify-content-center align-items-center p-4'>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email address">
+                    <button type="submit" class="btn text-white w-100" style='background-color: #f72210;'>FREE
+                        SIGNUP ></button>
+                </form>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class='d-flex flex-column mt-4 justify-content-center align-items-center'>
+            <div class='top-footer border-bottom border-1 w-100' style='border-color: #d3d3d3;'>
+                <h1 class='roboto-slab m-0' style='color: #f72210; font-size: 46px;'>Newsweek</h1>
+                <p class='story-content'>© 2021 NEWSWEEK DIGITAL LLC</p>
+                <div class='socials-container'>
+                    <ul class='socials d-flex my-1 p-0'>
+                        <li><i class="fab fa-facebook-square"></i></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-instagram-square"></i></li>
+                        <li><i class="fab fa-linkedin-in"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class='links mt-1 d-flex w-100'>
+                <h6 style='padding-left: 0.5rem;'>Editions:</h6>
+                <ul class='editions-links d-flex flex-wrap p-0 ms-2'>
+                    <li>U.S. Edition</li>
+                    <li>日本</li>
+                    <li>Pakistan</li>
+                    <li>Polska</li>
+                    <li>România</li>
+                </ul>
+            </div>
+            <div class='links d-flex w-100'>
+                <ul class='last-links d-flex flex-wrap p-0'>
+                    <li>About Us</li>
+                    <li>Announcements</li>
+                    <li>Archive
+                    <li>Corrections</li>
+                    <li>Contact Us</li>
+                    <li>Editorial Guidelines</li>
+                    <li>Advertise</li>
+                    <li>Copyright</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookie Policy</li>
+                    <li>Terms of Sale</li>
+                </ul>
+            </div>
+        </footer>
     </div>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
