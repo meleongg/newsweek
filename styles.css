@@ -110,3 +110,38 @@ font-family: 'Roboto Slab', serif; (bold only) */
 /* * {
     outline: 1px solid red;     
 } */
+
+@media screen and (min-width: 768px) {
+    .order-md-6 {
+        order: 6;
+    }
+
+    .order-md-7 {
+        order: 7;
+    }
+
+    .order-md-8 {
+        order: 8;
+    }
+
+    .order-md-9 {
+        order: 9;
+    }
+
+    .cover {
+        width: 40%;
+    }
+
+    .newsletter picture {
+        width: 40%;
+    }
+
+    .sub-content {
+        width: 80%;
+    }
+
+    .block {
+        width: 40% !important;
+    }
+    
+}

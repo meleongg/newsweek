@@ -21,7 +21,7 @@
 
 <body>
     <!-- Header -->
-    <header class='container-fluid sticky-top p-0'>
+    <header class='container-fluid sticky-top p-0 mb-4'>
         <nav class='navbar p-0'>
             <div class='w-100'>
                 <ul class='d-flex justify-content-between p-2 align-items-center text-white m-0'
@@ -29,8 +29,9 @@
                     <li class='nav-item d-flex justify-content-start align-items-center'>
                         <h1 class='roboto-slab m-0'>Newsweek</h1>
                     </li>
-                    <li class='nav-item d-flex justify-content-end align-items-center'>
-                        <i class="fas fa-user me-3" style="color: #d3d3d3;"></i>
+                    <li class='nav-item d-flex justify-content-center align-items-center'>
+                        <i class="d-block d-sm-block d-md-none fas fa-user me-3" style="color: #d3d3d3;"></i>
+                        <h6 class='d-none d-md-block d-lg-none text-uppercase me-3 roboto-bold m-0'>login</h6>
                         <button class='d-block d-sm-none btn btn-warning text-uppercase fw-bold'
                             style='border-radius: 24px; font-size: 11px; background-color: #ffe400; border-color: #ffe400;'>subscribe
                             from $4
@@ -46,29 +47,10 @@
     </header>
     <!-- Main Content -->
     <div class='container-fluid'>
-        <!-- Top Story -->
-        <section class='story px-1 mt-4 d-flex flex-column'>
-            <h6 class='text-uppercase mt-2 fw-bold story-heading'>Top Story</h6>
-            <div class='story-imgs mb-2 position-relative'>
-                <img class='img-fluid'
-                    src="https://d.newsweek.com/en/full/1809232/syria-president-assad-wins-fourth-election.webp?w=591&h=364&f=53c65712db832faee373141d786e397c"
-                    alt="syria-president-assad-wins-fourth-election">
-                <span class='position-absolute bottom-0 start-0 img-identifier-container'>
-                    <p class='text-uppercase roboto-bold m-0 p-2'>world</p>
-                </span>
-            </div>
-            <div class='story-body'>
-                <h4 class='roboto-bold'>Syria's Assad Wins Fourth Election, Second Since War and Ninth for Family</h4>
-                <p class='story-content'>Syrian Parliament Speaker Hammouda Sabbagh announced Thursday that the
-                    incumbent Assad had won 95.1% of the vote, or 13,540,860 ballots, figures likely to be met with
-                    skepticism from opposition figures and Western powers that have derided the race as a sham.</p>
-            </div>
-        </section>
-        <!-- Top Stories -->
-        <section class='top-stories px-1 d-flex flex-column mt-3'>
-            <h6 class='text-uppercase fw-bold story-heading'>Top Stories</h6>
-            <!-- Story 1 -->
-            <div class='story'>
+        <div class='row row-cols-md-2'>
+            <!-- Top Story -->
+            <section class='story px-1 d-flex flex-column order-md-2 col-12 col-md-7'>
+                <h6 class='text-uppercase fw-bold story-heading'>Top Story</h6>
                 <div class='story-imgs mb-2 position-relative'>
                     <img class='img-fluid'
                         src="https://d.newsweek.com/en/full/1809232/syria-president-assad-wins-fourth-election.webp?w=591&h=364&f=53c65712db832faee373141d786e397c"
@@ -84,620 +66,701 @@
                         incumbent Assad had won 95.1% of the vote, or 13,540,860 ballots, figures likely to be met with
                         skepticism from opposition figures and Western powers that have derided the race as a sham.</p>
                 </div>
-            </div>
-            <!-- Story 2 -->
-            <div class='story mt-2'>
-                <div class='story-imgs mb-2 position-relative'>
-                    <img class='img-fluid'
-                        src="https://d.newsweek.com/en/full/1809232/syria-president-assad-wins-fourth-election.webp?w=591&h=364&f=53c65712db832faee373141d786e397c"
-                        alt="syria-president-assad-wins-fourth-election">
-                    <span class='position-absolute bottom-0 start-0 img-identifier-container'>
-                        <p class='text-uppercase roboto-bold m-0 p-2'>world</p>
-                    </span>
+            </section>
+
+            <!-- Top Stories -->
+            <section class='top-stories px-1 d-flex flex-column order-md-1 col-12 col-md-5'>
+                <h6 class='text-uppercase fw-bold story-heading'>Top Stories</h6>
+                <!-- Story 1 -->
+                <div class='story'>
+                    <div class='story-imgs mb-2 position-relative'>
+                        <img class='img-fluid'
+                            src="https://d.newsweek.com/en/full/1809232/syria-president-assad-wins-fourth-election.webp?w=591&h=364&f=53c65712db832faee373141d786e397c"
+                            alt="syria-president-assad-wins-fourth-election">
+                        <span class='position-absolute bottom-0 start-0 img-identifier-container'>
+                            <p class='text-uppercase roboto-bold m-0 p-2'>world</p>
+                        </span>
+                    </div>
+                    <div class='story-body'>
+                        <h4 class='roboto-bold'>Syria's Assad Wins Fourth Election, Second Since War and Ninth for
+                            Family
+                        </h4>
+                        <p class='story-content'>Syrian Parliament Speaker Hammouda Sabbagh announced Thursday that the
+                            incumbent Assad had won 95.1% of the vote, or 13,540,860 ballots, figures likely to be met
+                            with
+                            skepticism from opposition figures and Western powers that have derided the race as a sham.
+                        </p>
+                    </div>
                 </div>
-                <div class='story-body'>
-                    <h4 class='roboto-bold'>Syria's Assad Wins Fourth Election, Second Since War and Ninth for Family
-                    </h4>
-                    <p class='story-content'>Syrian Parliament Speaker Hammouda Sabbagh announced Thursday that the
-                        incumbent Assad had won 95.1% of the vote, or 13,540,860 ballots, figures likely to be met with
-                        skepticism from opposition figures and Western powers that have derided the race as a sham.</p>
+                <!-- Story 2 -->
+                <div class='story mt-2'>
+                    <div class='story-imgs mb-2 position-relative'>
+                        <img class='img-fluid'
+                            src="https://d.newsweek.com/en/full/1809232/syria-president-assad-wins-fourth-election.webp?w=591&h=364&f=53c65712db832faee373141d786e397c"
+                            alt="syria-president-assad-wins-fourth-election">
+                        <span class='position-absolute bottom-0 start-0 img-identifier-container'>
+                            <p class='text-uppercase roboto-bold m-0 p-2'>world</p>
+                        </span>
+                    </div>
+                    <div class='story-body'>
+                        <h4 class='roboto-bold'>Syria's Assad Wins Fourth Election, Second Since War and Ninth for
+                            Family
+                        </h4>
+                        <p class='story-content'>Syrian Parliament Speaker Hammouda Sabbagh announced Thursday that the
+                            incumbent Assad had won 95.1% of the vote, or 13,540,860 ballots, figures likely to be met
+                            with
+                            skepticism from opposition figures and Western powers that have derided the race as a sham.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <!-- Story 3 -->
-            <div class='story mt-2'>
-                <div class='story-imgs mb-2 position-relative'>
-                    <img class='img-fluid'
-                        src="https://d.newsweek.com/en/full/1809232/syria-president-assad-wins-fourth-election.webp?w=591&h=364&f=53c65712db832faee373141d786e397c"
-                        alt="syria-president-assad-wins-fourth-election">
-                    <span class='position-absolute bottom-0 start-0 img-identifier-container'>
-                        <p class='text-uppercase roboto-bold m-0 p-2'>world</p>
-                    </span>
+                <!-- Story 3 -->
+                <div class='story mt-2'>
+                    <div class='story-imgs mb-2 position-relative'>
+                        <img class='img-fluid'
+                            src="https://d.newsweek.com/en/full/1809232/syria-president-assad-wins-fourth-election.webp?w=591&h=364&f=53c65712db832faee373141d786e397c"
+                            alt="syria-president-assad-wins-fourth-election">
+                        <span class='position-absolute bottom-0 start-0 img-identifier-container'>
+                            <p class='text-uppercase roboto-bold m-0 p-2'>world</p>
+                        </span>
+                    </div>
+                    <div class='story-body'>
+                        <h4 class='roboto-bold'>Syria's Assad Wins Fourth Election, Second Since War and Ninth for
+                            Family
+                        </h4>
+                        <p class='story-content'>Syrian Parliament Speaker Hammouda Sabbagh announced Thursday that the
+                            incumbent Assad had won 95.1% of the vote, or 13,540,860 ballots, figures likely to be met
+                            with
+                            skepticism from opposition figures and Western powers that have derided the race as a sham.
+                        </p>
+                    </div>
                 </div>
-                <div class='story-body'>
-                    <h4 class='roboto-bold'>Syria's Assad Wins Fourth Election, Second Since War and Ninth for Family
-                    </h4>
-                    <p class='story-content'>Syrian Parliament Speaker Hammouda Sabbagh announced Thursday that the
-                        incumbent Assad had won 95.1% of the vote, or 13,540,860 ballots, figures likely to be met with
-                        skepticism from opposition figures and Western powers that have derided the race as a sham.</p>
+                <!-- Story 4 -->
+                <div class='story mt-2'>
+                    <div class='story-imgs mb-2 position-relative'>
+                        <img class='img-fluid'
+                            src="https://d.newsweek.com/en/full/1809232/syria-president-assad-wins-fourth-election.webp?w=591&h=364&f=53c65712db832faee373141d786e397c"
+                            alt="syria-president-assad-wins-fourth-election">
+                        <span class='position-absolute bottom-0 start-0 img-identifier-container'>
+                            <p class='text-uppercase roboto-bold m-0 p-2'>world</p>
+                        </span>
+                    </div>
+                    <div class='story-body'>
+                        <h4 class='roboto-bold'>Syria's Assad Wins Fourth Election, Second Since War and Ninth for
+                            Family
+                        </h4>
+                        <p class='story-content'>Syrian Parliament Speaker Hammouda Sabbagh announced Thursday that the
+                            incumbent Assad had won 95.1% of the vote, or 13,540,860 ballots, figures likely to be met
+                            with
+                            skepticism from opposition figures and Western powers that have derided the race as a sham.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <!-- Story 4 -->
-            <div class='story mt-2'>
-                <div class='story-imgs mb-2 position-relative'>
-                    <img class='img-fluid'
-                        src="https://d.newsweek.com/en/full/1809232/syria-president-assad-wins-fourth-election.webp?w=591&h=364&f=53c65712db832faee373141d786e397c"
-                        alt="syria-president-assad-wins-fourth-election">
-                    <span class='position-absolute bottom-0 start-0 img-identifier-container'>
-                        <p class='text-uppercase roboto-bold m-0 p-2'>world</p>
-                    </span>
+                <!-- Story 5 -->
+                <div class='story mt-2'>
+                    <div class='story-imgs mb-2 position-relative'>
+                        <img class='img-fluid'
+                            src="https://d.newsweek.com/en/full/1809232/syria-president-assad-wins-fourth-election.webp?w=591&h=364&f=53c65712db832faee373141d786e397c"
+                            alt="syria-president-assad-wins-fourth-election">
+                        <span class='position-absolute bottom-0 start-0 img-identifier-container'>
+                            <p class='text-uppercase roboto-bold m-0 p-2'>world</p>
+                        </span>
+                    </div>
+                    <div class='story-body'>
+                        <h4 class='roboto-bold'>Syria's Assad Wins Fourth Election, Second Since War and Ninth for
+                            Family
+                        </h4>
+                        <p class='story-content'>Syrian Parliament Speaker Hammouda Sabbagh announced Thursday that the
+                            incumbent Assad had won 95.1% of the vote, or 13,540,860 ballots, figures likely to be met
+                            with
+                            skepticism from opposition figures and Western powers that have derided the race as a sham.
+                        </p>
+                    </div>
                 </div>
-                <div class='story-body'>
-                    <h4 class='roboto-bold'>Syria's Assad Wins Fourth Election, Second Since War and Ninth for Family
-                    </h4>
-                    <p class='story-content'>Syrian Parliament Speaker Hammouda Sabbagh announced Thursday that the
-                        incumbent Assad had won 95.1% of the vote, or 13,540,860 ballots, figures likely to be met with
-                        skepticism from opposition figures and Western powers that have derided the race as a sham.</p>
-                </div>
-            </div>
-            <!-- Story 5 -->
-            <div class='story mt-2'>
-                <div class='story-imgs mb-2 position-relative'>
-                    <img class='img-fluid'
-                        src="https://d.newsweek.com/en/full/1809232/syria-president-assad-wins-fourth-election.webp?w=591&h=364&f=53c65712db832faee373141d786e397c"
-                        alt="syria-president-assad-wins-fourth-election">
-                    <span class='position-absolute bottom-0 start-0 img-identifier-container'>
-                        <p class='text-uppercase roboto-bold m-0 p-2'>world</p>
-                    </span>
-                </div>
-                <div class='story-body'>
-                    <h4 class='roboto-bold'>Syria's Assad Wins Fourth Election, Second Since War and Ninth for Family
-                    </h4>
-                    <p class='story-content'>Syrian Parliament Speaker Hammouda Sabbagh announced Thursday that the
-                        incumbent Assad had won 95.1% of the vote, or 13,540,860 ballots, figures likely to be met with
-                        skepticism from opposition figures and Western powers that have derided the race as a sham.</p>
-                </div>
-            </div>
-        </section>
-        <!-- The Debate -->
-        <section class='the-debate px-1 d-flex flex-column mt-3'>
-            <h6 class='text-uppercase fw-bold story-heading'>The Debate</h6>
-            <!-- Top Argument -->
-            <div class='top-argument d-flex border-top border-5 justify-content-start align-items-center'
-                style='border-color: #d3d3d3;'>
-                <picture>
-                    <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
-                        alt="headshot">
-                </picture>
-                <div class='top-argument-text my-4 d-flex flex-column ms-3'>
-                    <h6 class='small-bold-heading'>Unpack the Supreme Court</h6>
-                    <h6 class='text-uppercase'>By: <span class='bold-name'>Tom Rogers</span></h6>
-                </div>
-            </div>
-            <!-- VS -->
-            <div class='versus position-relative d-flex justify-content-center align-items-center flex-column border border-bottom border-top border-secondary border-1'
-                style='height: 3px;'>
-                <div class='circle border rounded-circle bg-dark text-white d-flex justify-content-center align-items-center'
-                    style='height: 32px; width: 32px;'>
-                    <p class='m-0'>VS</p>
-                </div>
-            </div>
-            <!-- Bottom Argument -->
-            <div class='btm-argument d-flex border-bottom border-5 justify-content-end text-end align-items-center'
-                style='border-color: #d3d3d3;'>
-                <div class='btm-argument-text my-4 me-3 d-flex flex-column align-items-end'>
-                    <h6 class='small-bold-heading'>Unpack the Supreme Court and Expose Them</h6>
-                    <h6 class='text-uppercase'>By: <span class='bold-name'>Tom Rogers</span></h6>
-                </div>
-                <picture>
-                    <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
-                        alt="headshot">
-                </picture>
-            </div>
-        </section>
-        <!-- Opinion -->
-        <section class='opinions px-1 d-flex flex-column mt-4'>
-            <h6 class='text-uppercase fw-bold story-heading'>Opinion</h6>
-            <div
-                class='opinion pb-2 border-bottom border-1 border-secondary d-flex justify-content-start align-items-center'>
-                <picture>
-                    <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
-                        alt="headshot">
-                </picture>
-                <div class='opinion-text ms-3'>
-                    <h6 class='small-bold-heading'>Eesports should be taken seriously</h6>
-                    <h6 class='text-uppercase'>By: Alexander Fernandez</h6>
-                </div>
-            </div>
-            <div
-                class='opinion py-2 border-bottom border-1 border-secondary d-flex justify-content-start align-items-center'>
-                <picture>
-                    <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
-                        alt="headshot">
-                </picture>
-                <div class='opinion-text ms-3'>
-                    <h6 class='small-bold-heading'>Eesports should be taken seriously</h6>
-                    <h6 class='text-uppercase'>By: Alexander Fernandez</h6>
-                </div>
-            </div>
-            <div
-                class='opinion py-2 border-bottom border-1 border-secondary d-flex justify-content-start align-items-center'>
-                <picture>
-                    <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
-                        alt="headshot">
-                </picture>
-                <div class='opinion-text ms-3'>
-                    <h6 class='small-bold-heading'>Eesports should be taken seriously</h6>
-                    <h6 class='text-uppercase'>By: Alexander Fernandez</h6>
-                </div>
-            </div>
-            <div
-                class='opinion py-2 border-bottom border-1 border-secondary d-flex justify-content-start align-items-center'>
-                <picture>
-                    <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
-                        alt="headshot">
-                </picture>
-                <div class='opinion-text ms-3'>
-                    <h6 class='small-bold-heading'>Eesports should be taken seriously</h6>
-                    <h6 class='text-uppercase'>By: Alexander Fernandez</h6>
-                </div>
-            </div>
-            <div
-                class='opinion py-2 border-bottom border-1 border-secondary d-flex justify-content-start align-items-center'>
-                <picture>
-                    <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
-                        alt="headshot">
-                </picture>
-                <div class='opinion-text ms-3'>
-                    <h6 class='small-bold-heading'>Eesports should be taken seriously</h6>
-                    <h6 class='text-uppercase'>By: Alexander Fernandez</h6>
-                </div>
-            </div>
-            <div
-                class='opinion py-2 border-bottom border-1 border-secondary d-flex justify-content-start align-items-center'>
-                <picture>
-                    <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
-                        alt="headshot">
-                </picture>
-                <div class='opinion-text ms-3'>
-                    <h6 class='small-bold-heading'>Eesports should be taken seriously</h6>
-                    <h6 class='text-uppercase'>By: Alexander Fernandez</h6>
-                </div>
-            </div>
-            <div
-                class='opinion py-2 border-bottom border-1 border-secondary d-flex justify-content-start align-items-center'>
-                <picture>
-                    <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
-                        alt="headshot">
-                </picture>
-                <div class='opinion-text ms-3'>
-                    <h6 class='small-bold-heading'>Eesports should be taken seriously</h6>
-                    <h6 class='text-uppercase'>By: Alexander Fernandez</h6>
-                </div>
-            </div>
-            <div
-                class='opinion py-2 border-bottom border-1 border-secondary d-flex justify-content-start align-items-center'>
-                <picture>
-                    <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
-                        alt="headshot">
-                </picture>
-                <div class='opinion-text ms-3'>
-                    <h6 class='small-bold-heading'>Eesports should be taken seriously</h6>
-                    <h6 class='text-uppercase'>By: Alexander Fernandez</h6>
-                </div>
-            </div>
-            <div
-                class='opinion py-2 border-bottom border-1 border-secondary d-flex justify-content-start align-items-center'>
-                <picture>
-                    <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
-                        alt="headshot">
-                </picture>
-                <div class='opinion-text ms-3'>
-                    <h6 class='small-bold-heading'>Eesports should be taken seriously</h6>
-                    <h6 class='text-uppercase'>By: Alexander Fernandez</h6>
-                </div>
-            </div>
-            <div class='opinion pt-2 d-flex justify-content-start align-items-center'>
-                <picture>
-                    <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
-                        alt="headshot">
-                </picture>
-                <div class='opinion-text ms-3'>
-                    <h6 class='small-bold-heading'>Eesports should be taken seriously</h6>
-                    <h6 class='text-uppercase'>By: Alexander Fernandez</h6>
-                </div>
-            </div>
-        </section>
-        <!-- Gen-Z Inspired -->
-        <section class='gen-z-inspired px-1 d-flex flex-column my-5 justify-content-center align-items-center'>
-            <picture>
-                <img class='img-fluid'
-                    src="https://d.newsweek.com/en/full/1771847/asp-banner.png?w=300&f=eedd54aefef6f51801fb07d3737e0d91"
-                    alt="gen-z-poster">
-            </picture>
-        </section>
-        <!-- Sponsored Insights -->
-        <section class='sponsored-insights px-1 d-flex flex-column mt-3'>
-            <div class='sponsored-insight'>
-                <div class='story-imgs position-relative'>
-                    <img class='img-fluid'
-                        src='https://d.newsweek.com/en/full/1784542/lenscrafters.jpg?w=500&h=333&f=b6c21e5dd6dfdde8e401197fa913ccc5'
-                        alt="syria-president-assad-wins-fourth-election">
-                    <span class='position-absolute bottom-0 start-0 sponsored-insight-container'>
-                        <p class='text-uppercase roboto-bold m-0 p-2'>sponsored insight</p>
-                    </span>
-                </div>
-                <div class='sponsored-insight-text p-3 d-flex flex-column justify-content-center align-items-center border border-1'
+            </section>
+            <!-- The Debate -->
+            <section class='the-debate px-1 d-flex flex-column mt-3 col-md-12 order-md-6'>
+                <h6 class='text-uppercase fw-bold story-heading'>The Debate</h6>
+                <!-- Top Argument -->
+                <div class='top-argument d-flex border-top border-5 justify-content-start align-items-center'
                     style='border-color: #d3d3d3;'>
-                    <h5 class='small-bold-heading mb-2'>Lenscrafters: Explore the New Eyewear Collection</h5>
-                    <p class='story-content'>The world’s top designers have unveiled new eyewear for spring and summer.
-                        Make
-                        a bold statement with
-                        cool frames from brands like Ray-Ban, Versace, and Prada, tailored to fit your vision needs and
-                        lifestyle.</p>
+                    <picture>
+                        <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
+                            alt="headshot">
+                    </picture>
+                    <div class='top-argument-text my-4 d-flex flex-column ms-3'>
+                        <h6 class='small-bold-heading'>Unpack the Supreme Court</h6>
+                        <h6 class='text-uppercase'>By: <span class='bold-name'>Tom Rogers</span></h6>
+                    </div>
                 </div>
-            </div>
-            <div class='sponsored-insight mt-4'>
-                <div class='story-imgs position-relative'>
-                    <img class='img-fluid'
-                        src='https://d.newsweek.com/en/full/1784542/lenscrafters.jpg?w=500&h=333&f=b6c21e5dd6dfdde8e401197fa913ccc5'
-                        alt="syria-president-assad-wins-fourth-election">
-                    <span class='position-absolute bottom-0 start-0 sponsored-insight-container'>
-                        <p class='text-uppercase roboto-bold m-0 p-2'>sponsored insight</p>
-                    </span>
+                <!-- VS -->
+                <div class='versus position-relative d-flex justify-content-center align-items-center flex-column border border-bottom border-top border-secondary border-1'
+                    style='height: 3px;'>
+                    <div class='circle border rounded-circle bg-dark text-white d-flex justify-content-center align-items-center'
+                        style='height: 32px; width: 32px;'>
+                        <p class='m-0'>VS</p>
+                    </div>
                 </div>
-                <div class='sponsored-insight-text p-3 d-flex flex-column justify-content-center align-items-center border border-1'
+                <!-- Bottom Argument -->
+                <div class='btm-argument d-flex border-bottom border-5 justify-content-end text-end align-items-center'
                     style='border-color: #d3d3d3;'>
-                    <h5 class='small-bold-heading mb-2'>Lenscrafters: Explore the New Eyewear Collection</h5>
-                    <p class='story-content'>The world’s top designers have unveiled new eyewear for spring and summer.
-                        Make
-                        a bold statement with
-                        cool frames from brands like Ray-Ban, Versace, and Prada, tailored to fit your vision needs and
-                        lifestyle.</p>
+                    <div class='btm-argument-text my-4 me-3 d-flex flex-column align-items-end'>
+                        <h6 class='small-bold-heading'>Unpack the Supreme Court and Expose Them</h6>
+                        <h6 class='text-uppercase'>By: <span class='bold-name'>Tom Rogers</span></h6>
+                    </div>
+                    <picture>
+                        <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
+                            alt="headshot">
+                    </picture>
                 </div>
-            </div>
-            <div class='sponsored-insight mt-4'>
-                <div class='story-imgs position-relative'>
-                    <img class='img-fluid'
-                        src='https://d.newsweek.com/en/full/1784542/lenscrafters.jpg?w=500&h=333&f=b6c21e5dd6dfdde8e401197fa913ccc5'
-                        alt="syria-president-assad-wins-fourth-election">
-                    <span class='position-absolute bottom-0 start-0 sponsored-insight-container'>
-                        <p class='text-uppercase roboto-bold m-0 p-2'>sponsored insight</p>
-                    </span>
+            </section>
+            <!-- Opinion -->
+            <section class='opinions px-1 d-flex flex-column mt-4 col-md-12 order-md-7'>
+                <h6 class='text-uppercase fw-bold story-heading'>Opinion</h6>
+                <div
+                    class='opinion pb-2 border-bottom border-1 border-secondary d-flex justify-content-start align-items-center'>
+                    <picture>
+                        <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
+                            alt="headshot">
+                    </picture>
+                    <div class='opinion-text ms-3'>
+                        <h6 class='small-bold-heading'>Eesports should be taken seriously</h6>
+                        <h6 class='text-uppercase'>By: Alexander Fernandez</h6>
+                    </div>
                 </div>
-                <div class='sponsored-insight-text p-3 d-flex flex-column justify-content-center align-items-center border border-1'
-                    style='border-color: #d3d3d3;'>
-                    <h5 class='small-bold-heading mb-2'>Lenscrafters: Explore the New Eyewear Collection</h5>
-                    <p class='story-content'>The world’s top designers have unveiled new eyewear for spring and summer.
-                        Make
-                        a bold statement with
-                        cool frames from brands like Ray-Ban, Versace, and Prada, tailored to fit your vision needs and
-                        lifestyle.</p>
+                <div
+                    class='opinion py-2 border-bottom border-1 border-secondary d-flex justify-content-start align-items-center'>
+                    <picture>
+                        <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
+                            alt="headshot">
+                    </picture>
+                    <div class='opinion-text ms-3'>
+                        <h6 class='small-bold-heading'>Eesports should be taken seriously</h6>
+                        <h6 class='text-uppercase'>By: Alexander Fernandez</h6>
+                    </div>
                 </div>
-            </div>
-            <div class='sponsored-insight mt-4'>
-                <div class='story-imgs position-relative'>
-                    <img class='img-fluid'
-                        src='https://d.newsweek.com/en/full/1784542/lenscrafters.jpg?w=500&h=333&f=b6c21e5dd6dfdde8e401197fa913ccc5'
-                        alt="syria-president-assad-wins-fourth-election">
-                    <span class='position-absolute bottom-0 start-0 sponsored-insight-container'>
-                        <p class='text-uppercase roboto-bold m-0 p-2'>sponsored insight</p>
-                    </span>
+                <div
+                    class='opinion py-2 border-bottom border-1 border-secondary d-flex justify-content-start align-items-center'>
+                    <picture>
+                        <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
+                            alt="headshot">
+                    </picture>
+                    <div class='opinion-text ms-3'>
+                        <h6 class='small-bold-heading'>Eesports should be taken seriously</h6>
+                        <h6 class='text-uppercase'>By: Alexander Fernandez</h6>
+                    </div>
                 </div>
-                <div class='sponsored-insight-text p-3 d-flex flex-column justify-content-center align-items-center border border-1'
-                    style='border-color: #d3d3d3;'>
-                    <h5 class='small-bold-heading mb-2'>Lenscrafters: Explore the New Eyewear Collection</h5>
-                    <p class='story-content'>The world’s top designers have unveiled new eyewear for spring and summer.
-                        Make
-                        a bold statement with
-                        cool frames from brands like Ray-Ban, Versace, and Prada, tailored to fit your vision needs and
-                        lifestyle.</p>
+                <div
+                    class='opinion py-2 border-bottom border-1 border-secondary d-flex justify-content-start align-items-center'>
+                    <picture>
+                        <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
+                            alt="headshot">
+                    </picture>
+                    <div class='opinion-text ms-3'>
+                        <h6 class='small-bold-heading'>Eesports should be taken seriously</h6>
+                        <h6 class='text-uppercase'>By: Alexander Fernandez</h6>
+                    </div>
                 </div>
-            </div>
-            <div class='sponsored-insight mt-4'>
-                <div class='story-imgs position-relative'>
-                    <img class='img-fluid'
-                        src='https://d.newsweek.com/en/full/1784542/lenscrafters.jpg?w=500&h=333&f=b6c21e5dd6dfdde8e401197fa913ccc5'
-                        alt="syria-president-assad-wins-fourth-election">
-                    <span class='position-absolute bottom-0 start-0 sponsored-insight-container'>
-                        <p class='text-uppercase roboto-bold m-0 p-2'>sponsored insight</p>
-                    </span>
+                <div
+                    class='opinion py-2 border-bottom border-1 border-secondary d-flex justify-content-start align-items-center'>
+                    <picture>
+                        <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
+                            alt="headshot">
+                    </picture>
+                    <div class='opinion-text ms-3'>
+                        <h6 class='small-bold-heading'>Eesports should be taken seriously</h6>
+                        <h6 class='text-uppercase'>By: Alexander Fernandez</h6>
+                    </div>
                 </div>
-                <div class='sponsored-insight-text p-3 d-flex flex-column justify-content-center align-items-center border border-1'
-                    style='border-color: #d3d3d3;'>
-                    <h5 class='small-bold-heading mb-2'>Lenscrafters: Explore the New Eyewear Collection</h5>
-                    <p class='story-content'>The world’s top designers have unveiled new eyewear for spring and summer.
-                        Make
-                        a bold statement with
-                        cool frames from brands like Ray-Ban, Versace, and Prada, tailored to fit your vision needs and
-                        lifestyle.</p>
+                <div
+                    class='opinion py-2 border-bottom border-1 border-secondary d-flex justify-content-start align-items-center'>
+                    <picture>
+                        <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
+                            alt="headshot">
+                    </picture>
+                    <div class='opinion-text ms-3'>
+                        <h6 class='small-bold-heading'>Eesports should be taken seriously</h6>
+                        <h6 class='text-uppercase'>By: Alexander Fernandez</h6>
+                    </div>
                 </div>
-            </div>
-            <div class='sponsored-insight mt-4'>
-                <div class='story-imgs position-relative'>
-                    <img class='img-fluid'
-                        src='https://d.newsweek.com/en/full/1784542/lenscrafters.jpg?w=500&h=333&f=b6c21e5dd6dfdde8e401197fa913ccc5'
-                        alt="syria-president-assad-wins-fourth-election">
-                    <span class='position-absolute bottom-0 start-0 sponsored-insight-container'>
-                        <p class='text-uppercase roboto-bold m-0 p-2'>sponsored insight</p>
-                    </span>
+                <div
+                    class='opinion py-2 border-bottom border-1 border-secondary d-flex justify-content-start align-items-center'>
+                    <picture>
+                        <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
+                            alt="headshot">
+                    </picture>
+                    <div class='opinion-text ms-3'>
+                        <h6 class='small-bold-heading'>Eesports should be taken seriously</h6>
+                        <h6 class='text-uppercase'>By: Alexander Fernandez</h6>
+                    </div>
                 </div>
-                <div class='sponsored-insight-text p-3 d-flex flex-column justify-content-center align-items-center border border-1'
-                    style='border-color: #d3d3d3;'>
-                    <h5 class='small-bold-heading mb-2'>Lenscrafters: Explore the New Eyewear Collection</h5>
-                    <p class='story-content'>The world’s top designers have unveiled new eyewear for spring and summer.
-                        Make
-                        a bold statement with
-                        cool frames from brands like Ray-Ban, Versace, and Prada, tailored to fit your vision needs and
-                        lifestyle.</p>
+                <div
+                    class='opinion py-2 border-bottom border-1 border-secondary d-flex justify-content-start align-items-center'>
+                    <picture>
+                        <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
+                            alt="headshot">
+                    </picture>
+                    <div class='opinion-text ms-3'>
+                        <h6 class='small-bold-heading'>Eesports should be taken seriously</h6>
+                        <h6 class='text-uppercase'>By: Alexander Fernandez</h6>
+                    </div>
                 </div>
-            </div>
-            <div class='sponsored-insight mt-4'>
-                <div class='story-imgs position-relative'>
-                    <img class='img-fluid'
-                        src='https://d.newsweek.com/en/full/1784542/lenscrafters.jpg?w=500&h=333&f=b6c21e5dd6dfdde8e401197fa913ccc5'
-                        alt="syria-president-assad-wins-fourth-election">
-                    <span class='position-absolute bottom-0 start-0 sponsored-insight-container'>
-                        <p class='text-uppercase roboto-bold m-0 p-2'>sponsored insight</p>
-                    </span>
+                <div
+                    class='opinion py-2 border-bottom border-1 border-secondary d-flex justify-content-start align-items-center'>
+                    <picture>
+                        <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
+                            alt="headshot">
+                    </picture>
+                    <div class='opinion-text ms-3'>
+                        <h6 class='small-bold-heading'>Eesports should be taken seriously</h6>
+                        <h6 class='text-uppercase'>By: Alexander Fernandez</h6>
+                    </div>
                 </div>
-                <div class='sponsored-insight-text p-3 d-flex flex-column justify-content-center align-items-center border border-1'
-                    style='border-color: #d3d3d3;'>
-                    <h5 class='small-bold-heading mb-2'>Lenscrafters: Explore the New Eyewear Collection</h5>
-                    <p class='story-content'>The world’s top designers have unveiled new eyewear for spring and summer.
-                        Make
-                        a bold statement with
-                        cool frames from brands like Ray-Ban, Versace, and Prada, tailored to fit your vision needs and
-                        lifestyle.</p>
+                <div class='opinion pt-2 d-flex justify-content-start align-items-center'>
+                    <picture>
+                        <img src="https://d.newsweek.com/en/full/1538932/tom-rogers.png?w=63&h=63&f=0b40bd95cb8f95020c438d20ee6188b9"
+                            alt="headshot">
+                    </picture>
+                    <div class='opinion-text ms-3'>
+                        <h6 class='small-bold-heading'>Eesports should be taken seriously</h6>
+                        <h6 class='text-uppercase'>By: Alexander Fernandez</h6>
+                    </div>
                 </div>
-            </div>
-            <div class='sponsored-insight mt-4'>
-                <div class='story-imgs position-relative'>
-                    <img class='img-fluid'
-                        src='https://d.newsweek.com/en/full/1784542/lenscrafters.jpg?w=500&h=333&f=b6c21e5dd6dfdde8e401197fa913ccc5'
-                        alt="syria-president-assad-wins-fourth-election">
-                    <span class='position-absolute bottom-0 start-0 sponsored-insight-container'>
-                        <p class='text-uppercase roboto-bold m-0 p-2'>sponsored insight</p>
-                    </span>
-                </div>
-                <div class='sponsored-insight-text p-3 d-flex flex-column justify-content-center align-items-center border border-1'
-                    style='border-color: #d3d3d3;'>
-                    <h5 class='small-bold-heading mb-2'>Lenscrafters: Explore the New Eyewear Collection</h5>
-                    <p class='story-content'>The world’s top designers have unveiled new eyewear for spring and summer.
-                        Make
-                        a bold statement with
-                        cool frames from brands like Ray-Ban, Versace, and Prada, tailored to fit your vision needs and
-                        lifestyle.</p>
-                </div>
-            </div>
-            <div class='sponsored-insight mt-4'>
-                <div class='story-imgs position-relative'>
-                    <img class='img-fluid'
-                        src='https://d.newsweek.com/en/full/1784542/lenscrafters.jpg?w=500&h=333&f=b6c21e5dd6dfdde8e401197fa913ccc5'
-                        alt="syria-president-assad-wins-fourth-election">
-                    <span class='position-absolute bottom-0 start-0 sponsored-insight-container'>
-                        <p class='text-uppercase roboto-bold m-0 p-2'>sponsored insight</p>
-                    </span>
-                </div>
-                <div class='sponsored-insight-text p-3 d-flex flex-column justify-content-center align-items-center border border-1'
-                    style='border-color: #d3d3d3;'>
-                    <h5 class='small-bold-heading mb-2'>Lenscrafters: Explore the New Eyewear Collection</h5>
-                    <p class='story-content'>The world’s top designers have unveiled new eyewear for spring and summer.
-                        Make
-                        a bold statement with
-                        cool frames from brands like Ray-Ban, Versace, and Prada, tailored to fit your vision needs and
-                        lifestyle.</p>
-                </div>
-            </div>
-        </section>
-        <!-- More Stories -->
-        <section class='more-stories px-1 d-flex flex-column mt-3'>
-            <h6 class='text-uppercase fw-bold story-heading'>More Stories</h6>
-            <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
-                <picture class='float-start me-2'>
-                    <img class='img-fluid'
-                        src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
-                        alt="headshot" height='95' width='95'>
-                </picture>
-                <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican Party
-                </h6>
-                <p class='story-content'>"The Republican Party is a dying national political party, and the sooner it
-                    can die the better for all of us," the former congressman said.</p>
-            </div>
-            <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
-                <picture class='float-start me-2'>
-                    <img class='img-fluid'
-                        src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
-                        alt="headshot" height='95' width='95'>
-                </picture>
-                <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican Party
-                </h6>
-                <p class='story-content'>"The Republican Party is a dying national political party, and the sooner it
-                    can die the better for all of us," the former congressman said.</p>
-            </div>
-            <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
-                <picture class='float-start me-2'>
-                    <img class='img-fluid'
-                        src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
-                        alt="headshot" height='95' width='95'>
-                </picture>
-                <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican Party
-                </h6>
-                <p class='story-content'>"The Republican Party is a dying national political party, and the sooner it
-                    can die the better for all of us," the former congressman said.</p>
-            </div>
-            <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
-                <picture class='float-start me-2'>
-                    <img class='img-fluid'
-                        src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
-                        alt="headshot" height='95' width='95'>
-                </picture>
-                <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican Party
-                </h6>
-                <p class='story-content'>"The Republican Party is a dying national political party, and the sooner it
-                    can die the better for all of us," the former congressman said.</p>
-            </div>
-            <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
-                <picture class='float-start me-2'>
-                    <img class='img-fluid'
-                        src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
-                        alt="headshot" height='95' width='95'>
-                </picture>
-                <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican Party
-                </h6>
-                <p class='story-content'>"The Republican Party is a dying national political party, and the sooner it
-                    can die the better for all of us," the former congressman said.</p>
-            </div>
-            <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
-                <picture class='float-start me-2'>
-                    <img class='img-fluid'
-                        src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
-                        alt="headshot" height='95' width='95'>
-                </picture>
-                <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican Party
-                </h6>
-                <p class='story-content'>"The Republican Party is a dying national political party, and the sooner it
-                    can die the better for all of us," the former congressman said.</p>
-            </div>
-            <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
-                <picture class='float-start me-2'>
-                    <img class='img-fluid'
-                        src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
-                        alt="headshot" height='95' width='95'>
-                </picture>
-                <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican Party
-                </h6>
-                <p class='story-content'>"The Republican Party is a dying national political party, and the sooner it
-                    can die the better for all of us," the former congressman said.</p>
-            </div>
-            <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
-                <picture class='float-start me-2'>
-                    <img class='img-fluid'
-                        src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
-                        alt="headshot" height='95' width='95'>
-                </picture>
-                <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican Party
-                </h6>
-                <p class='story-content'>"The Republican Party is a dying national political party, and the sooner it
-                    can die the better for all of us," the former congressman said.</p>
-            </div>
-            <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
-                <picture class='float-start me-2'>
-                    <img class='img-fluid'
-                        src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
-                        alt="headshot" height='95' width='95'>
-                </picture>
-                <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican Party
-                </h6>
-                <p class='story-content'>"The Republican Party is a dying national political party, and the sooner it
-                    can die the better for all of us," the former congressman said.</p>
-            </div>
-            <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
-                <picture class='float-start me-2'>
-                    <img class='img-fluid'
-                        src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
-                        alt="headshot" height='95' width='95'>
-                </picture>
-                <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican Party
-                </h6>
-                <p class='story-content'>"The Republican Party is a dying national political party, and the sooner it
-                    can die the better for all of us," the former congressman said.</p>
-            </div>
-            <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
-                <picture class='float-start me-2'>
-                    <img class='img-fluid'
-                        src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
-                        alt="headshot" height='95' width='95'>
-                </picture>
-                <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican Party
-                </h6>
-                <p class='story-content'>"The Republican Party is a dying national political party, and the sooner it
-                    can die the better for all of us," the former congressman said.</p>
-            </div>
-            <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
-                <picture class='float-start me-2'>
-                    <img class='img-fluid'
-                        src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
-                        alt="headshot" height='95' width='95'>
-                </picture>
-                <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican Party
-                </h6>
-                <p class='story-content'>"The Republican Party is a dying national political party, and the sooner it
-                    can die the better for all of us," the former congressman said.</p>
-            </div>
-        </section>
-        <!-- My Turn -->
-        <section class='my-turn px-1 d-flex flex-column mt-3'>
-            <h6 class='text-uppercase fw-bold story-heading'>My Turn</h6>
-            <div class='my-turn-story d-flex flex-column'>
+            </section>
+            <!-- Gen-Z Inspired -->
+            <section
+                class='gen-z-inspired px-1 d-flex flex-column my-5 justify-content-center align-items-center order-md-8 col-md-12'>
                 <picture>
                     <img class='img-fluid'
-                        src="https://d.newsweek.com/en/full/1791530/cul-map-abandoned-banner.jpg?w=397&h=397&l=25&t=48&f=df3b555b320bcfcdde201cc48a1a98d5"
-                        alt="super-cool-towers">
+                        src="https://d.newsweek.com/en/full/1771847/asp-banner.png?w=300&f=eedd54aefef6f51801fb07d3737e0d91"
+                        alt="gen-z-poster">
                 </picture>
-                <h6 class='fw-bold story-heading mt-2'>'My Two-Year-Old Has an IQ of 146'</h6>
-            </div>
-            <div class='my-turn-story d-flex mt-3 flex-column'>
-                <picture>
-                    <img class='img-fluid'
-                        src="https://d.newsweek.com/en/full/1791530/cul-map-abandoned-banner.jpg?w=397&h=397&l=25&t=48&f=df3b555b320bcfcdde201cc48a1a98d5"
-                        alt="super-cool-towers">
-                </picture>
-                <h6 class='fw-bold story-heading mt-2'>'My Two-Year-Old Has an IQ of 146'</h6>
-            </div>
-            <div class='my-turn-story d-flex mt-3 flex-column'>
-                <picture>
-                    <img class='img-fluid'
-                        src="https://d.newsweek.com/en/full/1791530/cul-map-abandoned-banner.jpg?w=397&h=397&l=25&t=48&f=df3b555b320bcfcdde201cc48a1a98d5"
-                        alt="super-cool-towers">
-                </picture>
-                <h6 class='fw-bold story-heading mt-2'>'My Two-Year-Old Has an IQ of 146'</h6>
-            </div>
-        </section>
-        <!-- Culture & Travel -->
-        <section class='culture-travel px-1 d-flex flex-column mt-3'>
-            <h6 class='text-uppercase fw-bold story-heading'>Culture & Travel</h6>
-            <div class='story'>
-                <div class='story-imgs position-relative'>
+            </section>
+            <!-- Sponsored Insights -->
+            <section class='sponsored-insights px-1 d-flex flex-column mt-3 order-md-9 offset-md-4 col-md-4'>
+                <div class='sponsored-insight'>
+                    <div class='story-imgs position-relative'>
+                        <img class='img-fluid'
+                            src='https://d.newsweek.com/en/full/1784542/lenscrafters.jpg?w=500&h=333&f=b6c21e5dd6dfdde8e401197fa913ccc5'
+                            alt="syria-president-assad-wins-fourth-election">
+                        <span class='position-absolute bottom-0 start-0 sponsored-insight-container'>
+                            <p class='text-uppercase roboto-bold m-0 p-2'>sponsored insight</p>
+                        </span>
+                    </div>
+                    <div class='sponsored-insight-text p-3 d-flex flex-column justify-content-center align-items-center border border-1'
+                        style='border-color: #d3d3d3;'>
+                        <h5 class='small-bold-heading mb-2'>Lenscrafters: Explore the New Eyewear Collection</h5>
+                        <p class='story-content'>The world’s top designers have unveiled new eyewear for spring and
+                            summer.
+                            Make
+                            a bold statement with
+                            cool frames from brands like Ray-Ban, Versace, and Prada, tailored to fit your vision needs
+                            and
+                            lifestyle.</p>
+                    </div>
+                </div>
+                <div class='sponsored-insight mt-4'>
+                    <div class='story-imgs position-relative'>
+                        <img class='img-fluid'
+                            src='https://d.newsweek.com/en/full/1784542/lenscrafters.jpg?w=500&h=333&f=b6c21e5dd6dfdde8e401197fa913ccc5'
+                            alt="syria-president-assad-wins-fourth-election">
+                        <span class='position-absolute bottom-0 start-0 sponsored-insight-container'>
+                            <p class='text-uppercase roboto-bold m-0 p-2'>sponsored insight</p>
+                        </span>
+                    </div>
+                    <div class='sponsored-insight-text p-3 d-flex flex-column justify-content-center align-items-center border border-1'
+                        style='border-color: #d3d3d3;'>
+                        <h5 class='small-bold-heading mb-2'>Lenscrafters: Explore the New Eyewear Collection</h5>
+                        <p class='story-content'>The world’s top designers have unveiled new eyewear for spring and
+                            summer.
+                            Make
+                            a bold statement with
+                            cool frames from brands like Ray-Ban, Versace, and Prada, tailored to fit your vision needs
+                            and
+                            lifestyle.</p>
+                    </div>
+                </div>
+                <div class='sponsored-insight mt-4'>
+                    <div class='story-imgs position-relative'>
+                        <img class='img-fluid'
+                            src='https://d.newsweek.com/en/full/1784542/lenscrafters.jpg?w=500&h=333&f=b6c21e5dd6dfdde8e401197fa913ccc5'
+                            alt="syria-president-assad-wins-fourth-election">
+                        <span class='position-absolute bottom-0 start-0 sponsored-insight-container'>
+                            <p class='text-uppercase roboto-bold m-0 p-2'>sponsored insight</p>
+                        </span>
+                    </div>
+                    <div class='sponsored-insight-text p-3 d-flex flex-column justify-content-center align-items-center border border-1'
+                        style='border-color: #d3d3d3;'>
+                        <h5 class='small-bold-heading mb-2'>Lenscrafters: Explore the New Eyewear Collection</h5>
+                        <p class='story-content'>The world’s top designers have unveiled new eyewear for spring and
+                            summer.
+                            Make
+                            a bold statement with
+                            cool frames from brands like Ray-Ban, Versace, and Prada, tailored to fit your vision needs
+                            and
+                            lifestyle.</p>
+                    </div>
+                </div>
+                <div class='sponsored-insight mt-4'>
+                    <div class='story-imgs position-relative'>
+                        <img class='img-fluid'
+                            src='https://d.newsweek.com/en/full/1784542/lenscrafters.jpg?w=500&h=333&f=b6c21e5dd6dfdde8e401197fa913ccc5'
+                            alt="syria-president-assad-wins-fourth-election">
+                        <span class='position-absolute bottom-0 start-0 sponsored-insight-container'>
+                            <p class='text-uppercase roboto-bold m-0 p-2'>sponsored insight</p>
+                        </span>
+                    </div>
+                    <div class='sponsored-insight-text p-3 d-flex flex-column justify-content-center align-items-center border border-1'
+                        style='border-color: #d3d3d3;'>
+                        <h5 class='small-bold-heading mb-2'>Lenscrafters: Explore the New Eyewear Collection</h5>
+                        <p class='story-content'>The world’s top designers have unveiled new eyewear for spring and
+                            summer.
+                            Make
+                            a bold statement with
+                            cool frames from brands like Ray-Ban, Versace, and Prada, tailored to fit your vision needs
+                            and
+                            lifestyle.</p>
+                    </div>
+                </div>
+                <div class='sponsored-insight mt-4'>
+                    <div class='story-imgs position-relative'>
+                        <img class='img-fluid'
+                            src='https://d.newsweek.com/en/full/1784542/lenscrafters.jpg?w=500&h=333&f=b6c21e5dd6dfdde8e401197fa913ccc5'
+                            alt="syria-president-assad-wins-fourth-election">
+                        <span class='position-absolute bottom-0 start-0 sponsored-insight-container'>
+                            <p class='text-uppercase roboto-bold m-0 p-2'>sponsored insight</p>
+                        </span>
+                    </div>
+                    <div class='sponsored-insight-text p-3 d-flex flex-column justify-content-center align-items-center border border-1'
+                        style='border-color: #d3d3d3;'>
+                        <h5 class='small-bold-heading mb-2'>Lenscrafters: Explore the New Eyewear Collection</h5>
+                        <p class='story-content'>The world’s top designers have unveiled new eyewear for spring and
+                            summer.
+                            Make
+                            a bold statement with
+                            cool frames from brands like Ray-Ban, Versace, and Prada, tailored to fit your vision needs
+                            and
+                            lifestyle.</p>
+                    </div>
+                </div>
+                <div class='sponsored-insight mt-4'>
+                    <div class='story-imgs position-relative'>
+                        <img class='img-fluid'
+                            src='https://d.newsweek.com/en/full/1784542/lenscrafters.jpg?w=500&h=333&f=b6c21e5dd6dfdde8e401197fa913ccc5'
+                            alt="syria-president-assad-wins-fourth-election">
+                        <span class='position-absolute bottom-0 start-0 sponsored-insight-container'>
+                            <p class='text-uppercase roboto-bold m-0 p-2'>sponsored insight</p>
+                        </span>
+                    </div>
+                    <div class='sponsored-insight-text p-3 d-flex flex-column justify-content-center align-items-center border border-1'
+                        style='border-color: #d3d3d3;'>
+                        <h5 class='small-bold-heading mb-2'>Lenscrafters: Explore the New Eyewear Collection</h5>
+                        <p class='story-content'>The world’s top designers have unveiled new eyewear for spring and
+                            summer.
+                            Make
+                            a bold statement with
+                            cool frames from brands like Ray-Ban, Versace, and Prada, tailored to fit your vision needs
+                            and
+                            lifestyle.</p>
+                    </div>
+                </div>
+                <div class='sponsored-insight mt-4'>
+                    <div class='story-imgs position-relative'>
+                        <img class='img-fluid'
+                            src='https://d.newsweek.com/en/full/1784542/lenscrafters.jpg?w=500&h=333&f=b6c21e5dd6dfdde8e401197fa913ccc5'
+                            alt="syria-president-assad-wins-fourth-election">
+                        <span class='position-absolute bottom-0 start-0 sponsored-insight-container'>
+                            <p class='text-uppercase roboto-bold m-0 p-2'>sponsored insight</p>
+                        </span>
+                    </div>
+                    <div class='sponsored-insight-text p-3 d-flex flex-column justify-content-center align-items-center border border-1'
+                        style='border-color: #d3d3d3;'>
+                        <h5 class='small-bold-heading mb-2'>Lenscrafters: Explore the New Eyewear Collection</h5>
+                        <p class='story-content'>The world’s top designers have unveiled new eyewear for spring and
+                            summer.
+                            Make
+                            a bold statement with
+                            cool frames from brands like Ray-Ban, Versace, and Prada, tailored to fit your vision needs
+                            and
+                            lifestyle.</p>
+                    </div>
+                </div>
+                <div class='sponsored-insight mt-4'>
+                    <div class='story-imgs position-relative'>
+                        <img class='img-fluid'
+                            src='https://d.newsweek.com/en/full/1784542/lenscrafters.jpg?w=500&h=333&f=b6c21e5dd6dfdde8e401197fa913ccc5'
+                            alt="syria-president-assad-wins-fourth-election">
+                        <span class='position-absolute bottom-0 start-0 sponsored-insight-container'>
+                            <p class='text-uppercase roboto-bold m-0 p-2'>sponsored insight</p>
+                        </span>
+                    </div>
+                    <div class='sponsored-insight-text p-3 d-flex flex-column justify-content-center align-items-center border border-1'
+                        style='border-color: #d3d3d3;'>
+                        <h5 class='small-bold-heading mb-2'>Lenscrafters: Explore the New Eyewear Collection</h5>
+                        <p class='story-content'>The world’s top designers have unveiled new eyewear for spring and
+                            summer.
+                            Make
+                            a bold statement with
+                            cool frames from brands like Ray-Ban, Versace, and Prada, tailored to fit your vision needs
+                            and
+                            lifestyle.</p>
+                    </div>
+                </div>
+                <div class='sponsored-insight mt-4'>
+                    <div class='story-imgs position-relative'>
+                        <img class='img-fluid'
+                            src='https://d.newsweek.com/en/full/1784542/lenscrafters.jpg?w=500&h=333&f=b6c21e5dd6dfdde8e401197fa913ccc5'
+                            alt="syria-president-assad-wins-fourth-election">
+                        <span class='position-absolute bottom-0 start-0 sponsored-insight-container'>
+                            <p class='text-uppercase roboto-bold m-0 p-2'>sponsored insight</p>
+                        </span>
+                    </div>
+                    <div class='sponsored-insight-text p-3 d-flex flex-column justify-content-center align-items-center border border-1'
+                        style='border-color: #d3d3d3;'>
+                        <h5 class='small-bold-heading mb-2'>Lenscrafters: Explore the New Eyewear Collection</h5>
+                        <p class='story-content'>The world’s top designers have unveiled new eyewear for spring and
+                            summer.
+                            Make
+                            a bold statement with
+                            cool frames from brands like Ray-Ban, Versace, and Prada, tailored to fit your vision needs
+                            and
+                            lifestyle.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- More Stories -->
+            <section class='more-stories px-1 d-flex flex-column mt-3 order-md-5 col-md-7 offset-md-5'>
+                <h6 class='text-uppercase fw-bold story-heading'>More Stories</h6>
+                <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
+                    <picture class='float-start me-2'>
+                        <img class='img-fluid'
+                            src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
+                            alt="headshot" height='95' width='95'>
+                    </picture>
+                    <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican
+                        Party
+                    </h6>
+                    <p class='story-content'>"The Republican Party is a dying national political party, and the sooner
+                        it
+                        can die the better for all of us," the former congressman said.</p>
+                </div>
+                <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
+                    <picture class='float-start me-2'>
+                        <img class='img-fluid'
+                            src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
+                            alt="headshot" height='95' width='95'>
+                    </picture>
+                    <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican
+                        Party
+                    </h6>
+                    <p class='story-content'>"The Republican Party is a dying national political party, and the sooner
+                        it
+                        can die the better for all of us," the former congressman said.</p>
+                </div>
+                <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
+                    <picture class='float-start me-2'>
+                        <img class='img-fluid'
+                            src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
+                            alt="headshot" height='95' width='95'>
+                    </picture>
+                    <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican
+                        Party
+                    </h6>
+                    <p class='story-content'>"The Republican Party is a dying national political party, and the sooner
+                        it
+                        can die the better for all of us," the former congressman said.</p>
+                </div>
+                <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
+                    <picture class='float-start me-2'>
+                        <img class='img-fluid'
+                            src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
+                            alt="headshot" height='95' width='95'>
+                    </picture>
+                    <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican
+                        Party
+                    </h6>
+                    <p class='story-content'>"The Republican Party is a dying national political party, and the sooner
+                        it
+                        can die the better for all of us," the former congressman said.</p>
+                </div>
+                <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
+                    <picture class='float-start me-2'>
+                        <img class='img-fluid'
+                            src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
+                            alt="headshot" height='95' width='95'>
+                    </picture>
+                    <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican
+                        Party
+                    </h6>
+                    <p class='story-content'>"The Republican Party is a dying national political party, and the sooner
+                        it
+                        can die the better for all of us," the former congressman said.</p>
+                </div>
+                <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
+                    <picture class='float-start me-2'>
+                        <img class='img-fluid'
+                            src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
+                            alt="headshot" height='95' width='95'>
+                    </picture>
+                    <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican
+                        Party
+                    </h6>
+                    <p class='story-content'>"The Republican Party is a dying national political party, and the sooner
+                        it
+                        can die the better for all of us," the former congressman said.</p>
+                </div>
+                <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
+                    <picture class='float-start me-2'>
+                        <img class='img-fluid'
+                            src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
+                            alt="headshot" height='95' width='95'>
+                    </picture>
+                    <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican
+                        Party
+                    </h6>
+                    <p class='story-content'>"The Republican Party is a dying national political party, and the sooner
+                        it
+                        can die the better for all of us," the former congressman said.</p>
+                </div>
+                <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
+                    <picture class='float-start me-2'>
+                        <img class='img-fluid'
+                            src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
+                            alt="headshot" height='95' width='95'>
+                    </picture>
+                    <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican
+                        Party
+                    </h6>
+                    <p class='story-content'>"The Republican Party is a dying national political party, and the sooner
+                        it
+                        can die the better for all of us," the former congressman said.</p>
+                </div>
+                <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
+                    <picture class='float-start me-2'>
+                        <img class='img-fluid'
+                            src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
+                            alt="headshot" height='95' width='95'>
+                    </picture>
+                    <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican
+                        Party
+                    </h6>
+                    <p class='story-content'>"The Republican Party is a dying national political party, and the sooner
+                        it
+                        can die the better for all of us," the former congressman said.</p>
+                </div>
+                <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
+                    <picture class='float-start me-2'>
+                        <img class='img-fluid'
+                            src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
+                            alt="headshot" height='95' width='95'>
+                    </picture>
+                    <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican
+                        Party
+                    </h6>
+                    <p class='story-content'>"The Republican Party is a dying national political party, and the sooner
+                        it
+                        can die the better for all of us," the former congressman said.</p>
+                </div>
+                <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
+                    <picture class='float-start me-2'>
+                        <img class='img-fluid'
+                            src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
+                            alt="headshot" height='95' width='95'>
+                    </picture>
+                    <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican
+                        Party
+                    </h6>
+                    <p class='story-content'>"The Republican Party is a dying national political party, and the sooner
+                        it
+                        can die the better for all of us," the former congressman said.</p>
+                </div>
+                <div class='more-stories-story clearfix border-top border-1 pt-3' style='border-color: #d3d3d3;'>
+                    <picture class='float-start me-2'>
+                        <img class='img-fluid'
+                            src="https://d.newsweek.com/en/full/1810168/joe-walsh.jpg?w=95&h=95&f=1e58d955e9be1090acba242474fe392b"
+                            alt="headshot" height='95' width='95'>
+                    </picture>
+                    <h6 class='small-bold-heading'>Ex-GOP Rep. Joe Walsh Calls for 'Better' Alternative to Republican
+                        Party
+                    </h6>
+                    <p class='story-content'>"The Republican Party is a dying national political party, and the sooner
+                        it
+                        can die the better for all of us," the former congressman said.</p>
+                </div>
+            </section>
+            <!-- My Turn -->
+            <section class='my-turn px-1 d-flex flex-column mt-3 order-md-3 col-md-7 offset-md-5'>
+                <h6 class='text-uppercase fw-bold story-heading'>My Turn</h6>
+                <div class='my-turn-story d-flex flex-column'>
                     <picture>
                         <img class='img-fluid'
-                            src="https://d.newsweek.com/en/full/1804037/cul-map-ufo-banner-1249064147.jpg?w=397&h=397&l=47&t=50&f=11e4ac255483c264f7801ea3f1cb5066"
-                            alt="ufo-bois">
+                            src="https://d.newsweek.com/en/full/1791530/cul-map-abandoned-banner.jpg?w=397&h=397&l=25&t=48&f=df3b555b320bcfcdde201cc48a1a98d5"
+                            alt="super-cool-towers">
                     </picture>
-                    <span class='position-absolute bottom-0 start-0 culture-travel-container'>
-                        <p class='text-uppercase roboto-bold m-0 p-1'>UFOS</p>
-                    </span>
+                    <h6 class='fw-bold story-heading mt-2'>'My Two-Year-Old Has an IQ of 146'</h6>
                 </div>
-                <h6 class='fw-bold story-heading mt-2'>Far Out Sightings: Where UFOs May Have Been Spotted</h6>
-            </div>
-            <div class='story mt-3'>
-                <div class='story-imgs position-relative'>
+                <div class='my-turn-story d-flex mt-3 flex-column'>
                     <picture>
                         <img class='img-fluid'
-                            src="https://d.newsweek.com/en/full/1804037/cul-map-ufo-banner-1249064147.jpg?w=397&h=397&l=47&t=50&f=11e4ac255483c264f7801ea3f1cb5066"
-                            alt="ufo-bois">
+                            src="https://d.newsweek.com/en/full/1791530/cul-map-abandoned-banner.jpg?w=397&h=397&l=25&t=48&f=df3b555b320bcfcdde201cc48a1a98d5"
+                            alt="super-cool-towers">
                     </picture>
-                    <span class='position-absolute bottom-0 start-0 culture-travel-container'>
-                        <p class='text-uppercase roboto-bold m-0 p-1'>UFOS</p>
-                    </span>
+                    <h6 class='fw-bold story-heading mt-2'>'My Two-Year-Old Has an IQ of 146'</h6>
                 </div>
-                <h6 class='fw-bold story-heading mt-2'>Far Out Sightings: Where UFOs May Have Been Spotted</h6>
-            </div>
-            <div class='story mt-3'>
-                <div class='story-imgs position-relative'>
+                <div class='my-turn-story d-flex mt-3 flex-column'>
                     <picture>
                         <img class='img-fluid'
-                            src="https://d.newsweek.com/en/full/1804037/cul-map-ufo-banner-1249064147.jpg?w=397&h=397&l=47&t=50&f=11e4ac255483c264f7801ea3f1cb5066"
-                            alt="ufo-bois">
+                            src="https://d.newsweek.com/en/full/1791530/cul-map-abandoned-banner.jpg?w=397&h=397&l=25&t=48&f=df3b555b320bcfcdde201cc48a1a98d5"
+                            alt="super-cool-towers">
                     </picture>
-                    <span class='position-absolute bottom-0 start-0 culture-travel-container'>
-                        <p class='text-uppercase roboto-bold m-0 p-1'>UFOS</p>
-                    </span>
+                    <h6 class='fw-bold story-heading mt-2'>'My Two-Year-Old Has an IQ of 146'</h6>
                 </div>
-                <h6 class='fw-bold story-heading mt-2'>Far Out Sightings: Where UFOs May Have Been Spotted</h6>
-            </div>
-        </section>
+            </section>
+            <!-- Culture & Travel -->
+            <section class='culture-travel px-1 d-flex flex-column mt-3 col-md-7 order-md-4 offset-md-5'>
+                <h6 class='text-uppercase fw-bold story-heading'>Culture & Travel</h6>
+                <div class='story'>
+                    <div class='story-imgs position-relative'>
+                        <picture>
+                            <img class='img-fluid'
+                                src="https://d.newsweek.com/en/full/1804037/cul-map-ufo-banner-1249064147.jpg?w=397&h=397&l=47&t=50&f=11e4ac255483c264f7801ea3f1cb5066"
+                                alt="ufo-bois">
+                        </picture>
+                        <span class='position-absolute bottom-0 start-0 culture-travel-container'>
+                            <p class='text-uppercase roboto-bold m-0 p-1'>UFOS</p>
+                        </span>
+                    </div>
+                    <h6 class='fw-bold story-heading mt-2'>Far Out Sightings: Where UFOs May Have Been Spotted</h6>
+                </div>
+                <div class='story mt-3'>
+                    <div class='story-imgs position-relative'>
+                        <picture>
+                            <img class='img-fluid'
+                                src="https://d.newsweek.com/en/full/1804037/cul-map-ufo-banner-1249064147.jpg?w=397&h=397&l=47&t=50&f=11e4ac255483c264f7801ea3f1cb5066"
+                                alt="ufo-bois">
+                        </picture>
+                        <span class='position-absolute bottom-0 start-0 culture-travel-container'>
+                            <p class='text-uppercase roboto-bold m-0 p-1'>UFOS</p>
+                        </span>
+                    </div>
+                    <h6 class='fw-bold story-heading mt-2'>Far Out Sightings: Where UFOs May Have Been Spotted</h6>
+                </div>
+                <div class='story mt-3'>
+                    <div class='story-imgs position-relative'>
+                        <picture>
+                            <img class='img-fluid'
+                                src="https://d.newsweek.com/en/full/1804037/cul-map-ufo-banner-1249064147.jpg?w=397&h=397&l=47&t=50&f=11e4ac255483c264f7801ea3f1cb5066"
+                                alt="ufo-bois">
+                        </picture>
+                        <span class='position-absolute bottom-0 start-0 culture-travel-container'>
+                            <p class='text-uppercase roboto-bold m-0 p-1'>UFOS</p>
+                        </span>
+                    </div>
+                    <h6 class='fw-bold story-heading mt-2'>Far Out Sightings: Where UFOs May Have Been Spotted</h6>
+                </div>
+            </section>
+        </div>
         <!-- Odd Sponsored Insight -->
-        <section class='odd-sponsored-insights px-1 d-flex flex-column mt-3'>
+        <section class='odd-sponsored-insights px-1 d-flex flex-column mt-3 offset-md-4 col-md-4'>
             <div class='odd-sponsored-insight'>
                 <div class='story-imgs position-relative'>
                     <img class='img-fluid'
@@ -719,7 +782,7 @@
             </div>
         </section>
         <!-- Email -->
-        <section class='email mt-3'>
+        <section class='email mt-3 offset-md-4 col-md-4'>
             <div class='row justify-content-center'>
                 <div class='col-10'>
                     <form class='d-flex flex-column justify-content-center align-items-center p-4'
@@ -738,7 +801,7 @@
             </div>
         </section>
         <!-- More Sponsored Insights -->
-        <section class='more-sponsored-insights px-1 d-flex flex-column mt-4'>
+        <section class='more-sponsored-insights px-1 d-flex flex-column mt-4 offset-md-4 col-md-4'>
             <div class='more-sponsored-insight'>
                 <div class='story-imgs position-relative'>
                     <img class='img-fluid'
@@ -855,28 +918,29 @@
             </div>
         </section>
         <!-- In the Magazine -->
-        <section class='in-the-mag px-1 d-flex flex-column mt-5'>
-            <div class='in-the-mag-img position-relative'>
-                <div class='story-imgs'>
-                    <h6 class='position-absolute small-bold-heading top-0 start-50 translate-middle text-uppercase'>
-                        In
-                        the
-                        Magazine
-                    </h6>
-                    <picture>
-                        <img class='img-fluid mt-3'
-                            src="https://d.newsweek.com/en/full/1807185/cover-june-04-11-2021.jpg?w=360&h=480&q=90&f=7ba996ebac312a89a9d0894809de3f6e"
-                            alt="money-woman">
-                    </picture>
-                    <span class='position-absolute start-0 bottom-0 in-the-mag-issue-container'>
-                        <p class='text-uppercase roboto-bold m-0 p-2'>June 11 Issue</p>
-                    </span>
+        <h6 class='small-bold-heading text-center text-uppercase w-100 pt-4 pb-3'>
+            In
+            the
+            Magazine
+        </h6>
+        <div class='row row-cols-md-4'>
+            <section class='in-the-mag px-1 d-flex flex-column  mt-sm-5 m-md-0'>
+                <div class='in-the-mag-img position-relative'>
+                    <div class='story-imgs'>
+                        <picture>
+                            <img class='img-fluid mt-3'
+                                src="https://d.newsweek.com/en/full/1807185/cover-june-04-11-2021.jpg?w=360&h=480&q=90&f=7ba996ebac312a89a9d0894809de3f6e"
+                                alt="money-woman">
+                        </picture>
+                        <span class='position-absolute start-0 bottom-0 in-the-mag-issue-container'>
+                            <p class='text-uppercase roboto-bold m-0 p-2'>June 11 Issue</p>
+                        </span>
+                    </div>
                 </div>
-            </div>
-            <h6 class='align-self-center justify-self-center small-bold-heading text-uppercase'>see all features ></h6>
-        </section>
-        <!-- US Cover -->
-        <section class='us-cover px-1 d-flex flex-column'>
+                <h6 class='align-self-center justify-self-center small-bold-heading text-uppercase'>see all features >
+                </h6>
+            </section>
+            <!-- US Cover -->
             <div class='cover-story'>
                 <picture>
                     <img class='img-fluid'
@@ -1010,9 +1074,9 @@
                     in Li
                 </p>
             </div>
-        </section>
+        </div>
         <!-- Editor's Pick -->
-        <section class='us-cover px-1 d-flex flex-column mt-3 justify-content-center align-items-center'>
+        <div class='row row-cols-md-2 pb-2 border-bottom border-1' style='border-color: #d3d3d3;'>
             <div class='border-bottom border-1 p-1 w-100 text-center' style='border-color: #d3d3d3;'>
                 <h5 class='roboto-bold text-uppercase'>Editor's Pick</h5>
             </div>
@@ -1144,46 +1208,62 @@
                         access to partisan poll watchers.</p>
                 </div>
             </div>
-        </section>
+            <!-- </section> -->
+        </div>
         <!-- Subscribe -->
+        <h6 class='text-uppercase small-bold-heading align-self-start pt-4 pb-3' style='color: #f00;'>Subscribe</h6>
         <section class='subscribe-end px-1 d-flex flex-column mt-3 justify-content-center align-items-center'>
-            <h6 class='text-uppercase small-bold-heading align-self-start' style='color: #f00;'>Subscribe</h6>
             <div class='sub-content p-3 d-flex flex-column justify-content-center align-items-center text-center'
                 style='background-color: #d3d3d3;'>
-                <div class='block bg-dark' style='width: 70%; height: 250px;'></div>
-                <h6 class='small-bold-heading mt-2'>In-depth Stories You Don't See Elsewhere About Topics You Want to
-                    Read!
-                </h6>
-                <p class='story-content'>All Access + Weekly Delivery. <br>
-                    Choose A Membership That's Perfect for You!</p>
-                <button class='btn text-white roboto-bold' style='background-color: #f00;'>SUBSCRIBE ></button>
+                <div class='row row-cols-md-2'>
+                    <div class='block bg-dark col-md-5' style='width: 70%; height: 250px;'></div>
+                    <div class='col-md-7 d-flex flex-column justify-content-center align-items-center text-center'>
+                        <h6 class='small-bold-heading mt-2'>In-depth Stories You Don't See Elsewhere About Topics You
+                            Want
+                            to
+                            Read!
+                        </h6>
+                        <p class='story-content'>All Access + Weekly Delivery. <br>
+                            Choose A Membership That's Perfect for You!</p>
+                        <button class='btn text-white roboto-bold' style='background-color: #f00;'>SUBSCRIBE ></button>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Newsletter -->
-        <section class='newsletter px-1 d-flex flex-column mt-4 justify-content-center align-items-center'>
-            <h6 class='text-uppercase small-bold-heading align-self-start' style='color: #f00;'>Newsletter</h6>
-            <picture>
-                <img class='img-fluid'
-                    src="https://d.newsweek.com/en/full/1541302/starting5-homepage.jpg?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5"
-                    alt="newsletter-photo">
-            </picture>
-            <div class='newsletter-text border border-1 w-100 text-center px-2' style='border-color: #d3d3d3'>
-                <h6 class='text-uppercase small-bold-heading mt-3'>Best of Newsweek via email</h6>
-                <p class='story-content m-0'>Daily news headlines & detailed briefings enjoyed by half a million
-                    readers.
-                </p>
-                <form class='d-flex justify-content-center align-items-center p-4'>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email address">
-                    <button type="submit" class="btn text-white w-100" style='background-color: #f72210;'>FREE
-                        SIGNUP ></button>
-                </form>
+        <h6 class='text-uppercase small-bold-heading align-self-start pt-4 pb-3' style='color: #f00;'>Newsletter</h6>
+        <section class='newsletter px-1 flex-column mt-4 justify-content-center align-items-center'>
+            <div class='sub-content d-flex flex-column justify-content-center align-items-center text-center w-100'>
+                <div class='row row-cols-md-2 justify-content-center'>
+                    <picture class='col-md-4'>
+                        <img class='img-fluid'
+                            src="https://d.newsweek.com/en/full/1541302/starting5-homepage.jpg?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5"
+                            alt="newsletter-photo">
+                    </picture>
+                    <div class='newsletter-text border border-1 text-center px-2 col-md-6'
+                        style='border-color: #d3d3d3'>
+                        <h6 class='text-uppercase small-bold-heading mt-3'>Best of Newsweek via email</h6>
+                        <p class='story-content m-0'>Daily news headlines & detailed briefings enjoyed by half a million
+                            readers.
+                        </p>
+                        <form class='d-flex justify-content-center align-items-center p-4'>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Email address">
+                            <button type="submit" class="btn text-white w-100" style='background-color: #f72210;'>FREE
+                                SIGNUP ></button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Footer -->
         <footer class='d-flex flex-column mt-4 justify-content-center align-items-center'>
-            <div class='top-footer border-bottom border-1 w-100' style='border-color: #d3d3d3;'>
-                <h1 class='roboto-slab m-0' style='color: #f72210; font-size: 46px;'>Newsweek</h1>
-                <p class='story-content'>© 2021 NEWSWEEK DIGITAL LLC</p>
+            <div class='top-footer border-bottom border-1 w-100 d-md-flex justify-content-between align-items-center'
+                style='border-color: #d3d3d3;'>
+                <div class='d-md-flex align-items-center'>
+                    <h1 class='roboto-slab m-0' style='color: #f72210; font-size: 46px;'>Newsweek</h1>
+                    <p class='story-content m-0 ms-md-2'>© 2021 NEWSWEEK DIGITAL LLC</p>
+                </div>
                 <div class='socials-container'>
                     <ul class='socials d-flex my-1 p-0'>
                         <li><i class="fab fa-facebook-square"></i></li>
