@@ -1,1 +1,1 @@
-# Remaking the newsweek.com website while practicing my Boostrap skills. 
+# I am remaking the newsweek.com website while practicing my Boostrap skills. 
